@@ -23,7 +23,7 @@ function GrievanceFormContent() {
   const [consent, setConsent] = useState(false);
   const [submitted, setSubmitted] = useState(false);
   const [referenceId, setReferenceId] = useState("");
-  const { toast } = useToast();
+  const toast = useToast();
 
   const selectedProject = projectId ? publicProjects.find(pr => pr.projectId === projectId) : null;
   const projectName = selectedProject?.projectName || "";
